@@ -13,9 +13,10 @@ public class TaskForm extends JDialog {
     public TaskForm(Frame owner, String title, Task existing) {
         super(owner, title, true);
         setLayout(new GridLayout(3, 2, 8, 8));
-
+        // judul tugas
         add(new JLabel("Judul Tugas:"));
         add(titleField);
+        //status
         add(new JLabel("Status:"));
         add(doneCheck);
 
