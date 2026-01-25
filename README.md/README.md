@@ -53,10 +53,12 @@ private static final String USER = "root";
 private static final String PASS = ""; 
       
 # Cara Menjalankan Aplikasi
-1. Jalankan
+1. Aktifkan server MYSQL di Laragon, lalu buat database todo_list.
+2. Buatkan table tasks pada database, berisikan id sebagai primary key [datatype:int, Default:auto_increment], tittle [datatype:varchar], is_done [datatype:tinyint], created_at [datatype:timestamp]
+3. Jalankan
 bash
 java -cp ".;lib/mysql-connector-j-8.0.33.jar" program.Main
-Gunakan ; di Windows, : di Linux/Mac.
+
 
 # Tampilan Aplikasi
 1. Antarmuka Utama: tabel daftar tugas dengan kolom ID, Judul, dan Selesai (checkbox).Form Input: kolom “Masukan list kegiatan” dengan tombol Tambah, Simpan Perubahan, dan Delete.
